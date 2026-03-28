@@ -1,0 +1,99 @@
+{
+  "all_time": {
+    "tickets_total": 7461,
+    "tickets_open": 23,
+    "tickets_closed": 7395,
+    "tickets_in_progress": 43,
+    "helpers_leaderboard": [
+      {
+        "id": 227,
+        "slack_id": "U0A55A4B21K",
+        "count": 94
+      }
+    ],
+    "mean_hang_time_minutes_unresolved": 198.10689037037,
+    "mean_hang_time_minutes_all": 538.466223643502,
+    "mean_resolution_time_minutes": 1825.64493914425,
+    "oldest_unanswered_ticket": {
+      "id": 7270,
+      "created_at": "2026-03-24T15:19:54.352000+00:00",
+      "age_minutes": 5994.0761966,
+      "link": "https://hackclub.slack.com/archives/C09MATKQM8C/p1774365577503859"
+    },
+    "helper_position": 15
+  },
+  "past_24h": {
+    "new_tickets_total": 69,
+    "new_tickets_now_closed": 47,
+    "new_tickets_still_open": 17,
+    "new_tickets_in_progress": 5,
+    "closed_today": 49,
+    "closed_today_from_today": 47,
+    "assigned_today_in_progress": 5,
+    "helpers_leaderboard": [],
+    "mean_hang_time_minutes_unresolved": 23.75398,
+    "mean_hang_time_minutes_all": 42.6619720430108,
+    "mean_resolution_time_minutes": 94.088934375,
+    "helper_position": null
+  },
+  "past_24h_previous": {
+    "new_tickets_total": 66,
+    "new_tickets_now_closed": 56,
+    "new_tickets_still_open": 3,
+    "new_tickets_in_progress": 7,
+    "closed_today": 61,
+    "closed_today_from_today": 55,
+    "assigned_today_in_progress": 7,
+    "helpers_leaderboard": [
+      {
+        "id": 227,
+        "slack_id": "U0A55A4B21K",
+        "count": 7
+      }
+    ],
+    "mean_hang_time_minutes_unresolved": 36.1239095238095,
+    "mean_hang_time_minutes_all": 21.3656140740741,
+    "mean_resolution_time_minutes": 106.831430952381,
+    "helper_position": 3
+  },
+  "past_7d": {
+    "new_tickets_total": 592,
+    "new_tickets_now_closed": 542,
+    "new_tickets_still_open": 23,
+    "new_tickets_in_progress": 27,
+    "closed_today": 751,
+    "closed_today_from_today": 542,
+    "assigned_today_in_progress": 27,
+    "helpers_leaderboard": [
+      {
+        "id": 227,
+        "slack_id": "U0A55A4B21K",
+        "count": 17
+      }
+    ],
+    "mean_hang_time_minutes_unresolved": 77.4540701149425,
+    "mean_hang_time_minutes_all": 45.0565741622575,
+    "mean_resolution_time_minutes": 154.408448526704,
+    "helper_position": 6
+  },
+  "past_7d_previous": {
+    "new_tickets_total": 671,
+    "new_tickets_now_closed": 661,
+    "new_tickets_still_open": 0,
+    "new_tickets_in_progress": 10,
+    "closed_today": 589,
+    "closed_today_from_today": 559,
+    "assigned_today_in_progress": 10,
+    "helpers_leaderboard": [
+      {
+        "id": 227,
+        "slack_id": "U0A55A4B21K",
+        "count": 15
+      }
+    ],
+    "mean_hang_time_minutes_unresolved": 179.843443333333,
+    "mean_hang_time_minutes_all": 167.155643942731,
+    "mean_resolution_time_minutes": 1151.38548224912,
+    "helper_position": 7
+  }
+}

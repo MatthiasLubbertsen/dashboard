@@ -2,6 +2,9 @@
 const STATS_URL = "https://flavortown.nephthys.hackclub.com/api/stats_v2";
 
 function getSlackIdFromRequest(req) {
+	const envSlackId = String(process.env.SLACK_ID || "").trim();
+	if (envSlackId) return envSlackId;
+
 	if (req?.query?.slackId) return String(req.query.slackId).trim();
 
 	const host = req?.headers?.host || "localhost";
@@ -35,8 +38,8 @@ module.exports = async function handler(req, res) {
 
 	if (!slackId) {
 		res.status(400).json({
-			error: "Missing required query parameter: slackId",
-			example: "/api/helper_stats?slackId=U12345678",
+			error: "Missing Slack ID. Set SLACK_ID in .env or pass ?slackId=U12345678 as fallback.",
+			example: "SLACK_ID=U12345678 or /api/helper_stats?slackId=U12345678",
 		});
 		return;
 	}

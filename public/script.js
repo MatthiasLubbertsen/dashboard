@@ -3,7 +3,7 @@ function updateDateTime() {
     const now = new Date();
 
     // Format time as HH:MM:SS
-    const time = now.toLocaleTimeString('en-US', { 
+    const time = now.toLocaleTimeString('en-US', {
         hour12: false,
         hour: '2-digit',
         minute: '2-digit',
@@ -30,3 +30,22 @@ updateDateTime();
 
 // Update every second
 setInterval(updateDateTime, 1000);
+
+function helperStats() {
+    fetch(`/api/helper_stats`)
+        .then(response => response.json())
+        .then(data => {
+            const positionElement = document.querySelector('#leaderboardPosition');
+            const resolvedElement = document.querySelector('#resolvedTickets');
+            positionElement.textContent = data.all_time.helper_position;
+            resolvedElement.textContent = data.all_time.helpers_leaderboard[0].count;
+        })
+        .catch(error => {
+            console.error('Error fetching helper stats:', error);
+        });
+}
+
+// Call the function to fetch and display helper stats
+helperStats();
+
+setInterval(helperStats, 60000);

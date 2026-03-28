@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
     font-family: "Arial", sans-serif;
+    user-select: none;
 }
 
 .center {
@@ -44,4 +45,49 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
+}
+
+.left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.right .helper {
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: right;
+}
+
+.right .helper #helperTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }

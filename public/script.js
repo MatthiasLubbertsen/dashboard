@@ -35,10 +35,10 @@ function helperStats() {
     fetch(`/api/helper_stats`)
         .then(response => response.json())
         .then(data => {
-            const positionElement = document.querySelector('#leaderboardPosition');
             const resolvedElement = document.querySelector('#resolvedTickets');
-            positionElement.textContent = data.all_time.helper_position;
-            resolvedElement.textContent = data.all_time.helpers_leaderboard[0].count;
+            const positionElement = document.querySelector('#leaderboardPosition');
+            resolvedElement.innerHTML = `<b>Resolved: </b>${data.all_time.helpers_leaderboard[0].count}`;
+            positionElement.innerHTML = `<b>#</b>${data.all_time.helper_position}`;
         })
         .catch(error => {
             console.error('Error fetching helper stats:', error);
